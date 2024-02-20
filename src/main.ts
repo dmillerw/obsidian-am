@@ -523,13 +523,13 @@ export default class AmazingMarvinPlugin extends Plugin {
 		const settings = this.settings;
 
 		if (settings.showDueDate && task.dueDate) {
-			details += `Due Date:: [[${task.dueDate}]] `;
+			details += `📅 [[${task.dueDate}]] `;
 		}
 		if (settings.showStartDate && task.startDate) {
-			details += `Start Date:: [[${task.startDate}]] `;
+			details += `🛫 [[${task.startDate}]] `;
 		}
 		if (settings.showScheduledDate && task.day && task.day !== 'unassigned') {
-			details += `Scheduled Date:: [[${task.day}]] `;
+			details += `⏳ [[${task.day}]] `;
 		}
 
 		return details;
